@@ -24,7 +24,7 @@ En Windows: `.venv\\Scripts\\activate`. El programa resuelve los datos desde su 
 
 Resultados principales: `plan_fabricacion_A013.csv`, `plan_llegadas_A013.csv`, `demanda_A013_mensual.csv`, `tabla5.csv`, `intervalos.csv`, `validacion_A012.csv`, `sensibilidades.csv` y `replicas_totales.csv`, todos dentro de `resultados/`. Los ficheros de auditoría incluyen limpieza histórica, coeficientes, cuota, tránsito y supuestos macro.
 
-Para regenerar el resumen PDF: `pip install reportlab` y `python crear_resumen.py`. Reproducir el análisis y la simulación solo requiere numpy y pandas.
+Reproducir el análisis y la simulación solo requiere numpy y pandas. Los PDF terminados están en `entrega/`.
 
 ## Qué significa el resultado
 
