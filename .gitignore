@@ -222,3 +222,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Documentación personal conservada fuera del repositorio
+/METODOLOGIA.md
+/GUION_PRESENTACION.md
+/fuentes_presentacion/

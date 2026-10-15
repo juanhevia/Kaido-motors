@@ -1,13 +1,12 @@
 # Resolución individual: Kaido Motors España, A013
 
-Modelo de demanda mensual para siete segmentos, plan de fabricación y simulación de tres escenarios. La solución se documenta en [METODOLOGIA.md](METODOLOGIA.md). El material docente original se conserva debajo y en [README_ORIGINAL.md](README_ORIGINAL.md).
+Modelo de demanda mensual para siete segmentos, plan de fabricación y simulación de tres escenarios. El material docente original se conserva debajo y en [README_ORIGINAL.md](README_ORIGINAL.md).
 
 ## Entregas
 
 - `entrega/resumen_ejecutivo.pdf`: dos páginas con plan mensual y Tabla 5 completa.
 - `entrega/modelo_y_datos.zip`: código, siete CSV, resultados, supuestos, documentación y pruebas.
 - `entrega/presentacion.pdf`: diez diapositivas para diez minutos y dos anexos de consulta.
-- `GUION_PRESENTACION.md`: guion con tiempos que suman 600 segundos.
 
 ## Reproducir el análisis
 
@@ -25,7 +24,7 @@ En Windows: `.venv\\Scripts\\activate`. El programa resuelve los datos desde su 
 
 Resultados principales: `plan_fabricacion_A013.csv`, `plan_llegadas_A013.csv`, `demanda_A013_mensual.csv`, `tabla5.csv`, `intervalos.csv`, `validacion_A012.csv`, `sensibilidades.csv` y `replicas_totales.csv`, todos dentro de `resultados/`. Los ficheros de auditoría incluyen limpieza histórica, coeficientes, cuota, tránsito y supuestos macro.
 
-Para regenerar el resumen PDF: `pip install reportlab` y `python crear_resumen.py`. El código fuente de presentación se incluye en `fuentes_presentacion/`; usa `@oai/artifact-tool` del entorno de autoría. Reproducir el análisis y la simulación solo requiere numpy y pandas.
+Para regenerar el resumen PDF: `pip install reportlab` y `python crear_resumen.py`. Reproducir el análisis y la simulación solo requiere numpy y pandas.
 
 ## Qué significa el resultado
 
@@ -33,7 +32,7 @@ Plan inicial de fabricación: **23.162** coches. La media central con revisión 
 
 Los tres escenarios parten del mismo plan. Los pedidos de enero llegan en abril. La producción de octubre-diciembre abastece A014. La Tabla 5 descuenta VM por edad, stock, transfers y los costes específicos del escenario. El coste de oportunidad perdido se informa aparte.
 
-El WAPE ex ante A012 es **28,3%**, frente a **31,1%** de repetir el año anterior. MD falla con 95,2% y CSUV no tiene historia antes de su lanzamiento A012. No hay datos reales del tránsito inicial: se estima y se prueba +/-25%. Consulte los demás límites y convenciones en la metodología.
+El WAPE ex ante A012 es **28,3%**, frente a **31,1%** de repetir el año anterior. MD falla con 95,2% y CSUV no tiene historia antes de su lanzamiento A012. No hay datos reales del tránsito inicial: se estima y se prueba +/-25%. Los supuestos se configuran en `config.json`.
 
 ## Repositorio propio
 
