@@ -1,0 +1,13 @@
+{
+  "lanzamiento_mes": 4,
+  "transfer_cap_demanda": 0.10,
+  "ganancia_revision": 0.35,
+  "correlacion_segmentos": 0.35,
+  "sigma_rel_cold_start": 0.45,
+  "z": {"B": 0.0, "C": 1.28, "MD": 1.65, "SSUV": 1.65, "CSUV": 1.65, "MSUV": 1.65, "S": 1.65},
+  "escenarios": {
+    "pesimista": {"paro_pp": 2, "confianza_puntos": -5, "credito_pp": 0.5, "pib_pp": -1, "actividad_pct": -0.03, "turismo_pp": -5, "meses_caida": 6, "ayuda_desde_mes": 0, "efecto_producto": 0.08, "retraso_lanzamiento_meses": 3, "combustible_factor": 0.97, "co2": 1, "arancel_pct": 0.05, "parada_mes": 5, "parada_segmento": "CSUV"},
+    "central": {"paro_pp": 0, "confianza_puntos": 0, "credito_pp": 0, "pib_pp": 0, "actividad_pct": 0, "turismo_pp": 0, "meses_caida": 3, "ayuda_desde_mes": 0, "efecto_producto": 0.08, "retraso_lanzamiento_meses": 0, "combustible_factor": 1, "co2": 0, "arancel_pct": 0, "parada_mes": 0, "parada_segmento": "CSUV"},
+    "optimista": {"paro_pp": -1, "confianza_puntos": 5, "credito_pp": -0.5, "pib_pp": 0.5, "actividad_pct": 0.02, "turismo_pp": 5, "meses_caida": 1, "ayuda_desde_mes": 4, "efecto_producto": 0.16, "retraso_lanzamiento_meses": 0, "combustible_factor": 1.02, "co2": 0, "arancel_pct": -0.01, "parada_mes": 0, "parada_segmento": "CSUV"}
+  }
+}
